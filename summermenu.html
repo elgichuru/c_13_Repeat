@@ -23,14 +23,15 @@ body {
   background-repeat: repeat-x;
 }
 header {
-  /*margin-top: 0;
+  margin-top: 0;
   padding: 3em 1em 2em 1em;
   text-align: center;
-  background-color: rgb(255 255 255 / 0.5);*/
-  background-image: url(images/blackgoose.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-color: rgb(255 255 255 / 0.5);
+  background-image: url(images/gooseshadow.png), url(images/blackgoose.png);
+  background-repeat: no-repeat,no-repeat;
+  background-position: 3em bottom, center;
+  background-size: auto, contain;
+ 
 }
 h1 {
   font: 400 2.5rem "Julius Sans One", Verdana, sans-serif;
@@ -84,6 +85,17 @@ h2 + p {
   color: olivedrab;
   background-color: #b9d972;
 } */
+ .container {
+  width: 600px;
+  height: 400px;
+  background-color:lightcoral;
+
+ }
+ img{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
+ }
 
 </style>
 </head>
@@ -98,6 +110,9 @@ h2 + p {
     <span class="label">Hours: Monday through Thursday:</span> 11 to 9, <span class="label">Friday and Saturday;</span> 11 to midnight</p>
   </div>
 </header>
+<div class="container">
+<img src="images/gooseshadow.png" alt="plaid background" width="100%" height="auto">
+</div>
 
 <section id="appetizers">
   <h2>Appetizers</h2>
