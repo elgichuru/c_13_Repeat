@@ -16,13 +16,9 @@ body {
   font-family: Georgia, serif;
   line-height: 1.75;
   margin: 0 15% 0;
-  width: 70%;
-  height: 100%;
- background-color:white;
-background-image:
-radial-gradient(midnightblue 9px, transparent 10px),
-repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
-background-size: 30px 30px, 90px 90px;
+ background-color:rgb(134, 127, 86);
+background-image: url(images/bullseye.png);
+background-attachment: fixed;
 background-position: 0 0;
 
 
@@ -39,6 +35,7 @@ header {
   background-repeat: no-repeat, no-repeat;
   background-position: 3em bottom, center;
   background-size: auto, contain;
+  
 
 }
 h1 {
@@ -82,21 +79,31 @@ h2 + p {
   font-style: italic;
 }
 
-
-
+.container {
+  background-image: url(images/gooseshadow.png);
+}
+a:link{
+  color: maroon;
+}
+a:visited{
+  color:chartreuse;
+}
 </style>
 </head>
 
 <body>
-
+<a href="#footer">Go to Footer</a>
 <header>
-  <h1>Black Goose Bistro<br>&bull; Summer Menu &bull;</h1>
+  <h1 id="header">Black Goose Bistro<br>&bull; Summer Menu &bull;</h1>
 
   <div id="info">
     <p>Baker's Corner, Seekonk, Massachusetts<br>
     <span class="label">Hours: Monday through Thursday:</span> 11 to 9, <span class="label">Friday and Saturday;</span> 11 to midnight</p>
   </div>
 </header>
+<div class="container">
+
+</div>
 
 <section id="appetizers">
   <h2>Appetizers</h2>
@@ -161,9 +168,10 @@ h2 + p {
     </dl>
     </section>
 
-<footer>
+<footer id ="footer">
   <p class="warning"><sup>*</sup> We are required to warn you that undercooked food is a health risk.</p>
-</footer>
+  <a href="#header">Back to Top</a>
+</footer >
 
 </body>
 </html>
